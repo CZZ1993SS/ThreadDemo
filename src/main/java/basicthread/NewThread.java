@@ -30,6 +30,7 @@ public class NewThread {
      */
     private static class ThreadRunnable implements Runnable{
 
+        @Override
         public void run() {
 
             System.out.println("----- 开始 ThreadRunnable 的工作 -----");
@@ -44,6 +45,7 @@ public class NewThread {
      */
     private static class ThreadCallable implements Callable<String>{
 
+        @Override
         public String call() throws Exception {
 
             System.out.println("----- 开始 ThreadCallable 的工作 -----");

@@ -48,6 +48,7 @@ public class usethreadlocal {
 
        public myThread(int id){this.id = id;}
 
+       @Override
        public void run() {
 
            System.out.println(Thread.currentThread().getName() + ": 启动");
