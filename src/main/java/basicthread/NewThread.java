@@ -68,6 +68,8 @@ public class NewThread {
         String result = futureTask.get();
         System.out.println(result);
 
+        /*直接调用 run 只会被当前线程当成普通方法调用放在主线程上跑，只有通过 start 装配映射成实际的内存中的线程才才会真正具有多线程的特性*/
+
     }
 
 
